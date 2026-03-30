@@ -12,12 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
     background: #0f3d3e;
     color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .container {
@@ -27,7 +29,7 @@ body {
 
 .sidebar {
     width: 300px;
-    background: rgba(19, 78, 74, 0.8);
+    background: rgba(19, 78, 74, 0.85);
     backdrop-filter: blur(10px);
     padding: 30px 20px;
     text-align: center;
@@ -44,13 +46,13 @@ body {
 
 .sidebar h2 {
     color: #ff8fab;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .sidebar .welcome {
-    font-size: 13px;
     opacity: 0.85;
     margin: 10px 0 15px;
-    line-height: 1.5;
 }
 
 .info {
@@ -59,8 +61,7 @@ body {
 }
 
 .info p {
-    margin: 8px 0;
-    font-size: 14px;
+    margin: 6px 0;
 }
 
 .content {
@@ -69,7 +70,7 @@ body {
 }
 
 .section {
-    background: rgba(19, 78, 74, 0.8);
+    background: rgba(19, 78, 74, 0.85);
     backdrop-filter: blur(10px);
     padding: 25px;
     border-radius: 16px;
@@ -78,13 +79,18 @@ body {
 }
 
 .section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .section h2 {
     color: #ff8fab;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 .grid {
@@ -93,103 +99,56 @@ body {
     gap: 15px;
 }
 
-.box {
-    background: #1c6e6e;
-    padding: 8px 12px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px; 
-}
-
-.box:hover {
-    background: #ff8fab;
-    color: #0f3d3e;
-}
-
-.project-box {
-    background: #1c6e6e;
-    padding: 14px 18px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 14px;
-    transition: 0.25s;
-}
-
-.project-box i {
-    color: #ff8fab;
-    font-size: 13px;
-}
-
-.project-box:hover {
-    background: #ff8fab;
-    color: #0f3d3e;
-    transform: translateY(-2px);
-}
-
-.project-box:hover i {
-    color: #0f3d3e;
-}
-
+.box,
+.project-box,
 .belief-box {
     background: #1c6e6e;
     padding: 12px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 14px;
+    gap: 10px;
+    text-decoration: none;
+    color: #f5f5f5;
     transition: 0.25s;
 }
 
+.box i,
+.project-box i,
 .belief-box i {
     color: #ff8fab;
     font-size: 16px;
 }
 
+.box:hover,
+.project-box:hover,
 .belief-box:hover {
     background: #ff8fab;
     color: #0f3d3e;
+    transform: translateY(-2px);
 }
 
+.box:hover i,
+.project-box:hover i,
 .belief-box:hover i {
     color: #0f3d3e;
-}
-
-.languages-i-used-before .box {
-    padding: 6px 10px;
-    font-size: 13px;
-    width: fit-content;   
 }
 
 .contact-grid {
     display: flex;
     gap: 12px;
-    justify-content: flex-start;
 }
 
 .contact-grid .project-box {
     width: 45px;
     height: 45px;
-    padding: 0;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-}
-
-.contact-grid .project-box i {
-    font-size: 18px;
 }
 
 ul {
     padding-left: 20px;
 }
+
 li {
     margin-bottom: 6px;
 }
@@ -316,7 +275,7 @@ li {
                 <a href="https://liacabreraa.github.io/WS101/LLTCCodes/ResumeLLTC.html" class="project-box"><i class="fas fa-file-alt"></i>Resume Writing</a>
                 <a href="https://liacabreraa.github.io/WS101/LLTCCodes/MTLabTask2NL.html" class="project-box"><i class="fas fa-table"></i>Nested List</a>
                 <a href="https://liacabreraa.github.io/WS101/LLTCCodes/MTLabTask3ImgMap.html" class="project-box"><i class="fas fa-image"></i>Image Map</a>
-                <a href="https://liacabreraa.github.io/WS101/LLTCCodes/MTLT4HTMLForms.html" class="project-box"><i class="fas fa-file-signature">HTML Forms</a>
+                <a href="https://liacabreraa.github.io/WS101/LLTCCodes/MTLT4HTMLForms.html" class="project-box"><i class="fas fa-file-signature"></i>HTML Forms</a>
                 <a href="https://liacabreraa.github.io/WS101/LLTCCodes/LLTCResumeCSS.html" class="project-box"><i class="fas fa-file-code"></i> Resume (Internal CSS)</a>
                 <a href="https://liacabreraa.github.io/WS101/LLTCCodes/MTLT6CSSDisplay.html" class="project-box"><i class="fas fa-columns"></i>CSS Display</a>
             </div>
